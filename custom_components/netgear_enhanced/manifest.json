@@ -1,0 +1,19 @@
+{
+    "domain": "netgear_enhanced",
+    "name": "Netgear Enhanced",
+    "config_flow": true,
+    "version": "0.0.1",
+    "documentation": "https://www.home-assistant.io/integrations/netgear_enhanced",
+    "requirements": [
+      "pynetgear_enhanced==0.2.2"
+    ],
+    "ssdp": [],
+    "zeroconf": [],
+    "homekit": {},
+    "dependencies": [],
+    "codeowners": [
+      "@crslen"
+    ],
+    "iot_class": "local_polling"
+  }
+  

@@ -1,0 +1,6 @@
+{
+    "name": "Netgear Enhanced",
+    "domains": ["sensor", "button", "switch", "device_tracker"],
+    "iot_class": "Local Polling",
+    "homeassistant": "2022.7.0"
+}
