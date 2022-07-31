@@ -26,6 +26,10 @@ KEY_COORDINATOR_LINK = "coordinator_link"
 DEFAULT_CONSIDER_HOME = timedelta(seconds=180)
 DEFAULT_NAME = "Netgear router"
 
+DEFAULT_HOST = 'routerlogin.net'
+DEFAULT_USER = 'admin'
+DEFAULT_PORT = 5000
+
 BLOCK = "Block"
 ALLOW = "Allow"
 

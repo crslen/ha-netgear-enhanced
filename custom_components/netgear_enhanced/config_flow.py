@@ -5,7 +5,7 @@ import logging
 from typing import cast
 from urllib.parse import urlparse
 
-from pynetgear import DEFAULT_HOST, DEFAULT_PORT, DEFAULT_USER
+# from .pynetgear_enhanced import DEFAULT_HOST, DEFAULT_PORT, DEFAULT_USER
 import voluptuous as vol
 
 from homeassistant import config_entries
@@ -30,6 +30,9 @@ from .const import (
     MODELS_PORT_5555,
     PORT_80,
     PORT_5555,
+    DEFAULT_HOST,
+    DEFAULT_PORT,
+    DEFAULT_USER,
 )
 from .errors import CannotLoginException
 from .router import get_api

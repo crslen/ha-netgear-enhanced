@@ -7,7 +7,7 @@ from datetime import timedelta
 import logging
 from typing import Any
 
-from pynetgear_enhanced import NetgearEnhanced
+from .pynetgear_enhanced import NetgearEnhanced
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import (
@@ -38,7 +38,6 @@ from .const import (
 from .errors import CannotLoginException
 
 _LOGGER = logging.getLogger(__name__)
-
 
 def get_api(
     password: str,
@@ -92,6 +91,8 @@ class NetgearRouter:
         self._api_lock = asyncio.Lock()
 
         self.devices: dict[str, Any] = {}
+        for p in sys.path:
+            _LOGGER.info( p )
 
     def _setup(self) -> bool:
         """Set up a Netgear router sync portion."""
